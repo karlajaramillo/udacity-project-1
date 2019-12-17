@@ -1,0 +1,34 @@
+/*
+  ==============================
+  Heading
+  ==============================
+*/
+
+h1 {
+  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -1px;
+}
+
+.site-cover-title {
+  font-size: 3rem; 
+}
+
+h2 {
+  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: 400;
+  color: #808080;
+}
+
+h3 {
+  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+h4 {
+  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}

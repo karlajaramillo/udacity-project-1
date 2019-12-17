@@ -1,0 +1,75 @@
+/*
+  ==============================
+  Grid template areas
+  ==============================
+*/
+
+.main-head {
+  grid-area: header;
+  height: 43px;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.site-cover-wrapper {
+  grid-area: main;
+}
+
+.top-posts-blog {
+  grid-area: top-posts-blog;
+}
+
+.subscribe {
+  grid-area: subscribe;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "top-posts-blog"
+    "subscribe"
+    "footer";
+}
+
+/*
+  ==============================
+  Blog post -- blog-post.html
+  ==============================
+*/
+
+.all--blog-post-page {
+  grid-area: all--blog-cards;
+}
+
+.all--blog-post-page {
+  display: grid;
+  grid-gap: 2em;
+}
+
+.main-post-page {
+  grid-area: main-post-page;
+}
+
+.about-author {
+  grid-area: about-author;
+}
+  
+.wrapper-post {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main-post-page"
+    "about-author"
+    "all--blog-cards"
+    "subscribe"
+    "footer";
+}

@@ -1,0 +1,149 @@
+/*
+  ==============================
+  Primary header
+  ==============================
+*/
+
+.wrapper-nav {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em 1em .5em 2.5em;
+  border-top: 2px solid #855555;
+  border-bottom: 1px solid #d7dadb;
+}
+
+.wrapper-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.site-title {
+  flex: 3;
+  text-align: left;
+}
+
+.site-title a {
+  font-size: 1.3em;
+  font-family: Pacifico;
+  font-weight: 200;
+  color: #9a9890;
+}
+
+.site-title span {
+  color: #855555;
+}
+
+.fa-bars {
+  font-size: 1.8em;
+  color: #9a9890;
+}
+
+.dropdown-button {
+  text-align: right;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  background-color: #fff;
+  z-index: 5000;
+}
+
+/* Menu for devices > 750px */
+.primary-nav {
+  display: none;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+
+.primary-nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.primary-nav a {
+  font-weight: 300;
+  color: #808080;
+  padding: 1em 1.3em;
+}
+
+.primary-nav a:hover {
+  font-weight: 300;
+  color: #fff;
+  background:rgb(133, 85, 85, .9);
+  padding: 1em 1.3em;
+}
+
+.dropdown-menu ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.dropdown-menu li {
+  -webkit-flex: 1 100%;
+  flex: 1 100%; 
+}
+
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  top: 3.1em;
+  right: 0;
+  width: 100%;
+  z-index: 2000;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom-right-radius: 3px; 
+  border-bottom-left-radius: 3px;
+  background-color: #fff;
+}
+
+.dropdown-menu li:first-child {
+  border-top: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  font-size: 1em;
+  padding: 1.2em 0;
+  font-weight: 400;
+}
+
+.dropdown-menu a:hover {
+  color: rgba(146, 21, 36, 1);
+  font-weight: 600;
+}
+
+/*
+  ==============================
+  Main footer
+  ==============================
+*/
+
+.main-footer {
+  background-color: #fdfdfd;
+  padding: 1em 3em;
+}
+  
+.margin-top-footer {
+  margin-top: 5em;
+}
+  
+.footer-nav a {
+  color: #adabab;
+}
+  
+.footer-header {
+  text-transform: uppercase;
+}
+  

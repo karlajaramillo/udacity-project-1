@@ -1,5 +1,16 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+
+/*
+  ==============================
+  Imported files
+  ==============================
+*/
+
+@import "grid.css";
+@import "boilerplate.css";
+@import "heading.css";
+
 /*
   ==============================
   Custom styles
@@ -7,12 +18,11 @@
 */
 
 html {
-    font-size: 62.5%; /* target (10 px) / context (16px). 62.5% means 1em = 10px */
+  font-size: 62.5%; /* target (10 px) / context (16px). 62.5% means 1em = 10px */
 }
-  
+
 body {
   min-height: 100%;
-  /*background: #212020;*/
   font-family: 'Montserrat', "Open Sans", sans-serif;
   font-weight: 500;
   line-height: 24px;
@@ -34,18 +44,17 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary, 
 time, mark, audio, video {
-    margin: 0;
-    padding:0;
-    border:0;
+  margin: 0;
+  padding:0;
+  border:0;
 }
-  
-  
+
 /*
   ==============================
   Boxes
   ==============================
 */
-  
+
 *,
 *:before,
 *:after {
@@ -53,189 +62,52 @@ time, mark, audio, video {
       -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-  
 
 /*
   ==============================
-  Typography
+  Typography, img, links and list
   ==============================
 */
-
-h1 {
-  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
-  font-weight: 500;
-}
-
-h2 {
-  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
-  font-weight: 400;
-  color: #808080;
-}
-
-h3 {
-  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
-  font-weight: 300;
-  font-size: 1.3rem;
-}
-
-h4 {
-  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-}
 
 p {
   margin: 1rem 0;
   font-weight: 100;
+  line-height: 2em;
 }
 
-img {
-  max-width: 100%;
+i {
+  color: #aab3b3;
+  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: 100;
 }
 
-
-  /*
-  ======================================
-  Links, List
-  ======================================
-*/
+u {
+  color: #aab3b3;
+  font-weight: 100;
+  padding-bottom: .5em;
+}
 
 a {
-    text-decoration: none;
-    -moz-transition: all, 0.2s, linear;
-    -o-transition: all, 0.2s, linear;
-    -webkit-transition: all, 0.2s, linear;
-    transition: all 0.2s linear;
-    color: #525c65;
-  }
+  text-decoration: none;
+  -moz-transition: all, 0.2s, linear;
+  -o-transition: all, 0.2s, linear;
+  -webkit-transition: all, 0.2s, linear;
+  transition: all 0.2s linear;
+  color: #525c65;
+}
 
 ol, ul {
   list-style: none;
 }
 
-
 /*
   ==============================
-  Primary header
+  Images, container, margin
   ==============================
 */
 
-.wrapper-nav {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .5em 1em .5em 2.5em;
-  border-top: 2px solid #855555;
-  border-bottom: 1px solid #d7dadb;
-}
-
-.wrapper-container {
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-.site-title {
-  flex: 3;
-  text-align: left;
-}
-
-.site-title a {
-  font-size: 1.3em;
-  font-family: Pacifico;
-  font-weight: 200;
-  color: #9a9890
-}
-
-.site-title span {
-  color: #855555;
-}
-.fa-bars {
-  font-size: 1.8em;
-  color: #9a9890;
-}
-.dropdown-button {
-  text-align: right;
-}
-
-.navbar-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  background-color: #fff;
-  z-index: 5000;
-}
-
-/* Menu for devices > 750px */
-.primary-nav {
-  display: none;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  justify-content: space-around;
-}
-
-.primary-nav ul {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.primary-nav a {
-  font-weight: 300;
-  color: #808080;
-  padding: 1em 1.3em;
-}
-  
-.primary-nav a:hover {
-  font-weight: 300;
-  color: #fff;
-  background:rgb(133, 85, 85, .9);
-  padding: 1em 1.3em;
-}
-
-.dropdown-menu ul {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border-top: 1px solid rgba(0, 0, 0, .1);
-}
-  
-.dropdown-menu li {
-  -webkit-flex: 1 100%;
-  flex: 1 100%; 
-}
-  
-.dropdown-menu {
-  display: none; 
-  position: absolute;
-  top: 3.1em;
-  right: 0;
-  width: 100%;
-  z-index: 2000;
-  text-align: center;
-  text-transform: uppercase;
-  border-bottom-right-radius: 3px; 
-  border-bottom-left-radius: 3px;
-  background-color: #fff;
-}
-  
-.dropdown-menu li:first-child {
-    border-top: 0;
-}
-  
-.dropdown-menu a {
-    display: block;
-    font-size: 1em;
-    padding: 1.2em 0;
-    font-weight: 400;
-}
-  
-.dropdown-menu a:hover {
-  color: rgba(146, 21, 36, 1);
-  font-weight: 600;
+img {
+  max-width: 100%;
 }
 
 .container {
@@ -251,12 +123,6 @@ ol, ul {
   Cover
   ==============================
 */
-
-/* .background-img {
-    width: 100%;
-    object-fit: cover;
-    height:100%;
-} */
 
 .site-cover {
   display: flex;
@@ -344,6 +210,7 @@ ol, ul {
 .copyright-wrapper {
   padding: 1em 0;
 }
+
 .wrapper-social {
   display: -webkit-flex;
   display: flex;
@@ -358,12 +225,12 @@ ol, ul {
 }
 
 .wrapper-social-logo a {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 
 .photo-size {
   border-radius: 50%;
-  box-shadow: 5px 5px 20px rgba(179,179,179,.4);
+  box-shadow: 2px 2px 3px rgba(179,179,179,.2);
   width: 4em;
 }
 
@@ -399,7 +266,7 @@ ol, ul {
   text-shadow: 2px 2px 0 #fff;
 }
 
-.contact-form { /* Fieldset */
+.contact-form { 
   max-width: 30em;
   margin: 0 auto;
   padding: 0;
@@ -421,7 +288,6 @@ ol, ul {
   padding: .6em .6em .6em 2.8em;
 }
 
-
 .contact-form input:focus {
   box-shadow: 0 0 2px #428682;
 }
@@ -429,6 +295,7 @@ ol, ul {
 .input-submit {
   padding: .7em 0;
 }
+
 .btn-subscribe {
   height: 3em;
   width: 100%;
@@ -465,6 +332,7 @@ input::-webkit-input-placeholder {
   All posts
   ==============================
 */
+
 .all-posts {
   display: none;
 }
@@ -527,70 +395,6 @@ input::-webkit-input-placeholder {
 
 /*
   ==============================
-  Main footer
-  ==============================
-*/
-
-.main-footer {
-  background-color: #fdfdfd;
-  padding: 1em 3em;
-}
-
-.margin-top-footer {
-  margin-top: 5em;
-}
-
-.footer-nav a {
-  color: #adabab;
-}
-
-.footer-header {
-  text-transform: uppercase;
-}
-
-/*
-  ==============================
-  Grid template areas
-  ==============================
-*/
-
-.main-head {
-  grid-area: header;
-  height: 43px;
-}
-
-.nav {
-  grid-area: nav;
-}
-
-.site-cover-wrapper {
-  grid-area: main;
-}
-
-.top-posts-blog {
-  grid-area: top-posts-blog;
-}
-
-.subscribe {
-  grid-area: subscribe;
-}
-
-.main-footer {
-  grid-area: footer;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-areas: 
-  "header"
-  "main"
-  "top-posts-blog"
-  "subscribe"
-  "footer";
-}
-
-/*
-  ==============================
   Blog post -- blog-post.html
   ==============================
 */
@@ -607,6 +411,7 @@ input::-webkit-input-placeholder {
 .title--post-page h1 {
   font-size: 3em;
   line-height: 4rem;
+  color: #757575;
 }
 
 .author-title--post-page a {
@@ -632,10 +437,6 @@ input::-webkit-input-placeholder {
 
 .post-image--post-page {
   padding: 1em 0;
-}
-
-.main--post-page {
-  grid-area: main-post-page;
 }
 
 .photo-size-author {
@@ -674,21 +475,15 @@ input::-webkit-input-placeholder {
 .wrapper-about-author {
   display: -webkit-flex;
   display: flex;
-  /* padding: 2em 0; */
 }
 
 .wrapper-about-author figure {
   padding-top: 1em;
-  padding-right: 2em
+  padding-right: 2em;
 }
 
 .author-bio a {
   color: #428682;
-}
-
-.all--blog-post-page {
-  display: grid;
-  grid-gap: 2em;
 }
 
 .text--post-page {
@@ -710,7 +505,7 @@ input::-webkit-input-placeholder {
 
 .post-image--post-page a {
   color: #5bc9b2;
-  }
+}
 
 .text--post-page a {
   color: #5bc9b2;
@@ -718,11 +513,12 @@ input::-webkit-input-placeholder {
 
 .text--post-page p {
   font-size: 1.4rem;
-  line-height: 2;
 }
 
-.text--post-page em {
+.text--post-page b {
   color: #ffb78d;
+  font-weight: 500;
+  font-family: 'Oswald', -apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 .text--post-page img {
@@ -732,35 +528,27 @@ input::-webkit-input-placeholder {
 
 .center {
   text-align: center;
+  padding: 1em 0;
 }
 
 .subtitle-post {
+  padding: .5em 0;
   font-size: 1.6rem;
-}
-
-.wrapper-post {
-  display: grid;
-  grid-template-areas: 
-  "header"
-  "nav"
-  "main-post-page"
-  "about-author"
-  "all-posts"
-  "subscribe"
-  "footer"
+  border-bottom: 1px solid rgba(170, 170, 170, 0.25);
+  width: 100%;
 }
 
 /*
-  ==============================
-  Media queries
-  ==============================
+  ====================================
+  Media queries - tablet
+  ====================================
 */
 
 @media all and (min-width: 750px) {
   .all-posts {
     grid-area: all-posts;
   }
-
+  
   .wrapper {
     grid-template-areas:
       "header header header header header header"
@@ -768,7 +556,7 @@ input::-webkit-input-placeholder {
       "main main main main top-posts-blog top-posts-blog"
       "subscribe subscribe subscribe subscribe subscribe subscribe"
       "all-posts all-posts all-posts all-posts all-posts all-posts"
-      "footer footer footer footer footer footer"
+      "footer footer footer footer footer footer";
   }
 
   .all-posts {
@@ -798,7 +586,7 @@ input::-webkit-input-placeholder {
   }
 
   .wrapper-social {
-    justify-content: flex-start ;
+    justify-content: flex-start;
   }
     
   .margin-big-screen {
@@ -812,7 +600,30 @@ input::-webkit-input-placeholder {
   .text--post-page blockquote {
     font-size: 1.6rem;
   }
+
+  .site-cover-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .top-posts {
+    width: 40%;
+  }
+
+  .article-title h2 {
+    font-size: 1.3em;
+  }
+
+  .subtitle-post {
+    width: 40%;
+  }
 }
+
+/*
+  ====================================
+  Media queries - laptop and desktop
+  ====================================
+*/
 
 @media all and (min-width: 1100px) {
   .wrapper-post {
@@ -822,10 +633,20 @@ input::-webkit-input-placeholder {
       "nav nav"
       "main-post-page subscribe"
       "about-author about-author"
-      "all-posts all-posts"
-      "footer footer"
+      "all--blog-cards all--blog-cards"
+      "footer footer";
   }
+
+  .site-cover-title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
   .margin-big-screen--post-blog {
     margin-top: 16rem;
+  }
+
+  .subtitle-post {
+    width: 20%;
   }
 }
